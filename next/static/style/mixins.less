@@ -1,0 +1,40 @@
+// mixins
+.text-overflow(){
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.primary-button(){
+  color: #fff;
+  background-color: @primary-color;
+  text-align: center;
+  border-radius: 3px;
+  width: 100%;
+  height: 36px;
+  line-height: 36px;
+  font-size: 14px;
+}
+
+.primary-sec-button(){
+  padding: 0px 18px;
+  height: 29px;
+  line-height: 27px;
+  background: #ffe6e9;
+  border: 1px solid @primary-color;
+  border-radius: 3px;
+  font-size: 14px;
+  color: @primary-color;
+  text-align: center;
+}
+
+.clearfix(){
+  *zoom: 1;/*ie6清除浮动的方式 *号只有IE6-IE7执行，其他浏览器不执行*/
+  &:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear:both;
+    visibility: hidden;
+  }
+}

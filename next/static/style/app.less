@@ -1,0 +1,35 @@
+// reset
+* {
+  padding: 0px;
+  margin: 0px;
+  word-break: break-all;
+  box-sizing: border-box;
+  font-family: 'Microsoft YaHei';
+  -webkit-overflow-scrolling: touch;
+  touch-action: manipulation;
+}
+
+// antd-mobile 样式reset
+.am-modal {
+  width: calc(100% - 26px)!important;
+  .am-modal-content {
+    border-radius: 5px!important;
+    overflow: visible!important;
+    padding: 0px!important;
+    .am-modal-body {
+      overflow: visible!important;
+      padding: 0px!important;
+    }
+  }
+}
+
+// 全局类
+input {
+  -webkit-appearance: none;
+  &::-webkit-input-placeholder {
+    // placeholder颜色
+    color: #b5b5b5;
+    // placeholder字体大小
+    font-size: 13px;
+  }
+}
